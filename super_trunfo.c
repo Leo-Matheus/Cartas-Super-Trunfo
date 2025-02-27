@@ -95,13 +95,14 @@ int main()
     printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
     printf("Super Poder: %.2f\n", superPoder2);
 
+    // Bloco que verifica se há carta vencedora ou empate em cada atributo.
     printf("-----Comparação de Cartas(1 = SIM e 0 = NÃO)-----\n");
-    printf("População: Carta 1 vence da Carta 2? %d\n", populacao1 > populacao2);
-    printf("Área: Carta 1 vence da Carta 2? %d\n", area1 > area2);
-    printf("PIB: Carta 1 vence da Carta 2? %d\n", pib1 > pib2);
-    printf("Número de Pontos Turísticos: Carta 1 vence Carta 2? %d\n", numeroDePontosTuristicos1 > numeroDePontosTuristicos2);
-    printf("Densidade Populacional: Carta 1 vence da Carta 2? %d\n", densidadePopulacional1 > densidadePopulacional2);
-    printf("PIB per Capita: Carta 1 vence da Carta 2? %d\n", pibPerCapita1 > pibPerCapita2);
-    printf("Super Poder: Carta 1 vence da Carta 2? %d\n", superPoder1 > superPoder2);
+    printf("População: Carta 1 vence? %d. Carta 2 vence? %d\n", populacao1 > populacao2, populacao1 < populacao2);
+    printf("Área: Carta 1 vence? %d. Carta 2 vence? %d\n", area1 > area2, area1 < area2);
+    printf("PIB: Carta 1 vence? %d. Carta 2 vence? %d\n", pib1 > pib2, pib1 < pib2);
+    printf("Número de Pontos Turísticos: Carta 1 vence? %d. Carta 2 vence? %d\n", numeroDePontosTuristicos1 > numeroDePontosTuristicos2, numeroDePontosTuristicos1 < numeroDePontosTuristicos2);
+    printf("Densidade Populacional: Carta 1 vence? %d. Carta 2 vence? %d\n", densidadePopulacional1 > densidadePopulacional2, densidadePopulacional1 < densidadePopulacional2);
+    printf("PIB per Capita: Carta 1 vence? %d. Carta 2 vence? %d\n", pibPerCapita1 > pibPerCapita2, pibPerCapita1 < pibPerCapita2);
+    printf("Super Poder: Carta 1 vence? %d. Carta 2 vence? %d\n", superPoder1 > superPoder2, superPoder1 < superPoder2);
     
 }
