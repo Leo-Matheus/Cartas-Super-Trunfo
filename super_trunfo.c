@@ -180,7 +180,7 @@ int main(){
         }
         break;
     default:
-        printf("Opção Inválida.\n");
+        printf("!!!!!Opção Inválida!!!!!\n");
         break;
     }
     printf("*************************************\n");
@@ -195,8 +195,8 @@ int main(){
     scanf("%d", &escolhaDeAtributo2);
 
     // Verifica se o usuário escolheu o mesmo atributo 2 vezes.
-    if (escolhaDeAtributo1 == escolhaDeAtributo2){ 
-        printf("!!!!!Não é possível escolher o mesmo atributo 2 vezes!!!!!\n");
+    if (escolhaDeAtributo1 == escolhaDeAtributo2 && (escolhaDeAtributo2 >= 1 && escolhaDeAtributo2 <= 5)){ 
+        printf("!!!!!Não é possível comparar o mesmo atributo duas vezes!!!!!\n");
         escolhaDeAtributo2 = 0;
     }
 
