@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    char estado1, estado2; // Letra de 'A' a 'H' (representando um dos oito estados).
-    char codigo1[4], codigo2[4]; // Letra do estado seguida de um número de 01 a 04 (ex: A01, B03).
+    char estado1, estado2; // Letra de 'A' a 'H'(representando um dos oito estados).
+    char codigo1[4], codigo2[4]; // Letra do estado seguida de um número de 01 a 04(ex: A01, B03).
     char cidade1[20], cidade2[20]; // Nome da cidade.
     unsigned long int populacao1, populacao2; // Número de habitantes da cidade.
     float area1, area2; // Área da cidade em quilômetros quadrados.
@@ -10,7 +10,7 @@ int main(){
     int numeroDePontosTuristicos1, numeroDePontosTuristicos2; // Quantidade de pontos turísticos na cidade.
     float densidadePopulacional1, densidadePopulacional2; // Densidade populacional da cidade.
     float pibPerCapita1, pibPerCapita2; // Produto Interno Bruto per Capita da cidade.
-    float superPoder1, superPoder2; // Soma de todos os atributos, subtraídos pela densidade populacional.
+    float superPoder1, superPoder2; // Soma de todos os atributos, subtraída pela densidade populacional.
     int escolhaDeAtributo1, escolhaDeAtributo2; // Armazena a escolha dos atributos nos menus.
 
     printf("-_-_-_-_-_SUPER TRUNFO_-_-_-_-_-\n");
@@ -280,7 +280,7 @@ int main(){
     }
     printf("*************************************\n");
 
-    //Cálculo do Super Poder(Soma de todos os atributos, subtraídos pela Densidade Populacional).
+    //Cálculo do Super Poder(Soma de todos os atributos, subtraída pela Densidade Populacional).
     superPoder1 = (float)populacao1 + area1 + pib1 + numeroDePontosTuristicos1 - densidadePopulacional1 + pibPerCapita1;
     superPoder2 = (float)populacao2 + area2 + pib2 + numeroDePontosTuristicos2 - densidadePopulacional2 + pibPerCapita2;
 
